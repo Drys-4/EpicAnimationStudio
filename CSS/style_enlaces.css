@@ -2,28 +2,31 @@
 
 #menu ul {
     list-style:none;
-    margin:0;
+    margin-right:10;
     padding:0;
    }
    
    /* items del menu */
    
    #menu ul li {
-    background-color:#567f5b;
+    background-color:#844964;
    }
    
    /* enlaces del menu */
    
    #menu ul a {
     display:block;
-    color:#fff;
+    color:#ffd5d5;
     text-decoration:none;
-    font-weight:400;
-    font-size:15px;
-    padding:10px;
+    font-weight:80px;
+    font-size:100%;
+    padding-left:51;
+    padding-right:51;
+    padding-top: 7;
+    padding-bottom: 7;
     font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform:uppercase;
-    letter-spacing:1px;
+    letter-spacing:0;
    }
    
    /* items del menu */
@@ -38,7 +41,7 @@
    /* efecto al pasar el ratón por los items del menu */
    
    #menu ul li:hover {
-    background:#86c98e;
+    background:#c986b2;
    }
 
 
@@ -50,7 +53,7 @@
     position:absolute;
     top:100%;
     left:0;
-    background:#eee;
+    background:#ffd5d5;
     padding:0;
    }
    
@@ -58,14 +61,14 @@
    
    #menu ul ul li {
     float:none;
-    width:150px
+    width:160px
    }
    
    /* enlaces de los items del menu desplegable */
    
    #menu ul ul a {
     line-height:120%;
-    padding:10px 15px;
+    padding:10px 12px;
    }
    
    /* items del menu desplegable al pasar el ratón */
