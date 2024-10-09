@@ -1,12 +1,12 @@
 <!DOCTYPE html=es>
     <html>
         <head>
-            <meta charset="uft-8">
+            <meta charset="utf-8">
             <title src="Imagenes/idea de mascota.png">Inicio - EA Studio</title>
             <link rel="stylesheet" href="CSS/style_enlaces.css">
             <link rel="stylesheet" href="CSS/style_logo.css">
             <link rel="stylesheet" href="CSS/style_body.css">
-
+            <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
         </head>
         <body>
       <!--  <div class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-list-vertical">
@@ -19,10 +19,15 @@
             </ul>
         </div>  -->
             <header>
-                <h4>
-                    <a href="https://drys-4.github.io/EpicAnimationStudio/"><img src="Imagenes/Logo_v1.1 Fondo transparente.png"></img></a>
-                </h4>
-            </header>
+                <ul>
+                    <a href="https://drys-4.github.io/EpicAnimationStudio/">
+                        <img src="Imagenes/Logo_v1.1 Fondo transparente.png" alt="Logo">
+                    </a>
+                </ul>    
+                <ul id="pet">
+                    <img src="Imagenes/mascota.gif" alt="Mascota">
+                </ul>    
+            </header>        
             <nav id="menu">
                 <ul>
                 <li><a href="8-animales.html">Sobre nosotros</a></li>
@@ -49,7 +54,83 @@
                 <li><a>Contacto</a></li>
                 </ul>
             </nav>
+            <p id="margen"></p>
             <section>
+                <div id="ConteItemsCarrusel">
+                    <div class="itemCarrusel" id="itemCarrusel-1">
+                        <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
+                            <img id="imgCarrusel" src="Imagenes/background_1.gif">
+                        </div>
+                        <div class="flechasCarrusel">
+                            <a href="#itemCarrusel-3">
+                                <i class="fas fa-chevron-left"><</i>
+                            </a>
+                            <a href="#itemCarrusel-2">    
+                                <i class="fas fa-chevron-right">></i>
+                            </a>
+                        </div>
+                        <div id="dots">
+                            <a id="dotActive">
+                                <i>·</i>
+                            </a>
+                            <a id="dot">
+                                <i>·</i>
+                            </a>
+                            <a id="dot">
+                                <i>·</i>
+                            </a>         
+                        </div>
+                    </div>
+                    <div class="itemCarrusel" id="itemCarrusel-2">
+                        <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
+                            <img id="imgCarrusel" src="Imagenes/background_2.gif">
+                        </div>
+                        <div class="flechasCarrusel">
+                            <a href="#itemCarrusel-1">
+                                <i class="fas fa-chevron-left"><</i>
+                            </a>
+                            <a href="#itemCarrusel-3">    
+                                <i class="fas fa-chevron-right">></i>
+                            </a>
+                        </div>
+                        <div id="dots">
+                            <a id="dot">
+                                <i>·</i>
+                            </a>
+                            <a id="dotActive">
+                                <i>·</i>
+                            </a>
+                            <a id="dot">
+                                <i>·</i>
+                            </a>         
+                        </div>
+                    </div>
+                    <div class="itemCarrusel" id="itemCarrusel-3">
+                        <div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
+                            <img id="imgCarrusel" src="Imagenes/background_3.gif">
+                        </div>
+                        <div class="flechasCarrusel">
+                            <a href="#itemCarrusel-2">
+                                <i class="fas fa-chevron-left"><</i>
+                            </a>
+                            <a href="#itemCarrusel-1">    
+                                <i class="fas fa-chevron-right">></i>
+                            </a>
+                        </div>
+                        <div id="dots">
+                            <a id="dot">
+                                <i>·</i>
+                            </a>
+                            <a id="dot">
+                                <i>·</i>
+                            </a>
+                            <a id="dotActive">
+                                <i>·</i>
+                            </a>         
+                        </div>
+                    </div>
+                </div>  
+               
                <!-- <table width="100%">
                     <tr>
                         <td><center/>
