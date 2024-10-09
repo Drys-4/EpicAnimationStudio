@@ -1,8 +1,27 @@
-header h4 img {
-    height: 100; 
-    padding-left: 10;
-    padding-top: 10;
-    display:block;
-
+header {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos dentro del header */
 }
 
+header ul {
+    list-style: none; /* Elimina los puntos de lista por defecto */
+    padding: 0; /* Elimina el padding de los ul */
+    margin: 0; /* Elimina el margin de los ul */
+}
+
+header ul img {
+    height: 100px; 
+    padding-left: 20px;
+    display: block;
+}
+
+#pet {
+    display: flex; /* Alinea el contenido del ul (en este caso la imagen) */
+    justify-content: center;
+}
+
+#pet img {
+    height: 150px; /* Ajusta el tamaño de la mascota */
+    margin: 0 600 0 0;
+}
