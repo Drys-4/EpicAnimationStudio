@@ -1,0 +1,146 @@
+footer {
+    background-color: #3c0050;
+    color: #4aa255;
+    padding-bottom: 100% end;
+}
+
+#conteItems {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer div {
+    flex: 1;
+    padding: 5px;
+}
+
+#boxLeft, #boxCenter, #boxRight {
+    flex: 1;
+    text-align: center;
+}
+
+footer ul {
+    margin: 5px;
+    list-style: none;
+}
+
+footer a {
+    margin: 5px;
+    /*column-count: 2;*/
+}
+
+/* BoxLeft */
+
+#boxLeft {
+    text-align: left;
+    padding-left: 15px;
+}
+
+footer #boxLeft img {
+    height: 100px;
+    display: block;
+}
+
+/* BoxCenter */
+
+footer #boxCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+/* BoxCenterTop */
+
+footer #boxCenterTop {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente las imágenes */
+    align-items: center;
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-bottom: 20px;
+}
+
+footer #boxCenterTop a img {
+    width: 45px;
+}
+
+/* BoxCenterBott */
+
+footer #boxCenterBott {
+    display: flex;
+    flex-direction: column; /* Alinea el contenido en una columna */
+    align-items: left; /* Centra verticalmente el contenido */
+    text-align: left;
+    gap: 10px; /* Espacio entre los textos */
+    color: #ab5ac6;
+    text-decoration: none;
+}
+
+/* BoxRight */
+
+#boxRight {
+    text-align: right;
+    display: flex;
+    flex-direction: column; /* Alinea el contenido en una columna */
+    align-items: center; /* Centra verticalmente el contenido */
+    text-align: center;
+    gap: 50px;
+}
+
+#boxRight p {
+    margin: 20px;
+}
+#boxRight #krita {
+    width: 135px;
+    position: absolute;
+}
+
+#boxRight #blender {
+    width: 280px;
+}
+/* Footer legal */
+
+.ft-legal {
+    padding: 1rem 2rem;
+    background-color: #333;
+}
+
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ft-legal-list li {
+    margin: 0.15rem 0.75rem;
+    white-space: nowrap;
+}
+
+.ft-legal-list #legal {
+    width: 28px;
+    margin: 0rem 0rem 0rem;
+    white-space: nowrap;
+}
+
+.ft-legal-list #legal2 {
+    width: 28px;
+    margin: 0rem 5rem 0rem;
+    white-space: nowrap;
+}
+
+.ft-legal-list #legal3 {
+    width: 28px;
+    margin: 0rem 9rem 0rem;
+    white-space: nowrap;
+}
+
+.ft-legal-list #legal4 {
+    width: 28px;
+    margin: 0rem 13rem 0rem;
+    white-space: nowrap;
+}
+  /* one before the last child */
+
+.ft-legal-list li:nth-last-child(6) {
+    flex: 1;
+}
