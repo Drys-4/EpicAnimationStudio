@@ -1,5 +1,5 @@
 footer {
-    background-color: #3c0050;
+    background-color: #392440;
     color: #4aa255;
     padding-bottom: 100% end;
 }
@@ -102,7 +102,7 @@ footer #boxCenterBott {
 
 .ft-legal {
     padding: 1rem 2rem;
-    background-color: #333;
+    background-color: #624b62;
 }
 
 .ft-legal-list {
@@ -120,23 +120,31 @@ footer #boxCenterBott {
     width: 28px;
     margin: 0rem 0rem 0rem;
     white-space: nowrap;
+    transform: scaleX(-1);
 }
 
 .ft-legal-list #legal2 {
-    width: 28px;
+    width: 27px;
     margin: 0rem 5rem 0rem;
     white-space: nowrap;
 }
 
 .ft-legal-list #legal3 {
-    width: 28px;
+    width: 31px;
     margin: 0rem 9rem 0rem;
     white-space: nowrap;
 }
 
 .ft-legal-list #legal4 {
     width: 28px;
-    margin: 0rem 13rem 0rem;
+    margin: 0rem 0rem 0rem;
+    white-space: nowrap;
+    transform: scaleX(-1);
+}
+
+.ft-legal-list #legal5 {
+    width: 28px;
+    margin: 0rem 11rem 0rem;
     white-space: nowrap;
 }
   /* one before the last child */
