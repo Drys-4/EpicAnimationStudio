@@ -1,40 +1,49 @@
 /* menu */
+#menu {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
 
 #menu ul {
-    list-style:none;
-    margin-right:10;
-    padding:0;
+    width: 100%; /* Asegura que la lista ocupe el 100% del ancho */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos uniformemente */
+    list-style: none;    
     z-index: 10;
+    width: 100%;
 }
    
    /* items del menu */
    
 #menu ul li {
     background-color:#844964;
+    flex-grow: 1; /* Hace que cada item del menú crezca para llenar el espacio */
+    text-align: center;
 }
    
    /* enlaces del menu */
-   
 #menu ul a {
     display:block;
     color:#ffd5d5;
     text-decoration:none;
-    font-weight:80px;
-    font-size:100%;
-    padding-left:50px;
-    padding-right:50px;
+    font-size: 1.5em;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 7;
     padding-bottom: 7;
     font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform:uppercase;
-    letter-spacing:0;
+    text-transform: uppercase;
+    letter-spacing: 0;
 }
    
    /* items del menu */
    
 #menu ul li {
-    position:relative;
-    float:right;
+    position: relative;
+    float: inline-start;
     margin:0;
     padding:0;
 }
@@ -49,25 +58,24 @@
    /* menu desplegable */
 
 #menu ul ul {
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    background:#ffd5d5;
-    padding:0;
+    display: none;
+    position: absolute;
+    background: #ffd5d5;
+    padding: 0;
 }
    
    /* items del menu desplegable */
    
 #menu ul ul li {
     float:none;
-    width:160px
+    width:100%;
+    text-align: left;
 }
    
    /* enlaces de los items del menu desplegable */
    
 #menu ul ul a {
-    line-height:120%;
+    line-height: 100%;
     padding:10px 12px;
 }
    
