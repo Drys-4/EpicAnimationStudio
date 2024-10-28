@@ -2,10 +2,107 @@
     <html>
         <head>
             <meta charset="utf-8">
-            <title src="Imagenes/idea de mascota.png">Contactos - EA Studio</title>
-            <link rel="stylesheet" href="CSS/recaptcha.css">
-           </head>
+            <title>Contactos - EA Studio</title>
+            <link rel="icon" href="Imagenes/pixel.png" type="image/x-icon">
+            <link rel="stylesheet" href="CSS/recaptcha.css"> <!--Favicon-->
+            <link rel="stylesheet" href="CSS/style_enlaces.css">
+            <link rel="stylesheet" href="CSS/style_logo.css">
+            <link rel="stylesheet" href="CSS/style_footer.css">
+            <link rel="stylesheet" href="CSS/style_contactos.css">
+        </head>
         <body>
+            <header>
+                <ul>
+                    <a href="https://drys-4.github.io/EpicAnimationStudio/">
+                        <img src="Imagenes/Logo_v1.1 Fondo transparente.png" alt="Logo">
+                    </a>
+                </ul>    
+                <ul id="pet">
+                    <img src="Imagenes/mascota.gif" alt="Mascota">
+                </ul>    
+            </header>        
+            <nav id="menu">    
+                <ul>
+                    <li><a href="">Sobre nosotros</a></li>
+                    <li><a>Enlaces</a>
+                        <ul>
+                            <li><a href="">Programas</a></li>
+                            <li><a href="">Tutoriales</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Servicios</a>
+                        <ul>
+                            <li><a href="">Orientacion</a></li>
+                            <li><a href="">Cursos</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Innovación</a>
+                        <ul>
+                            <li><a href="">Proyectos en curso</a></li>
+                            <li><a href="">Proyectos desarrollados</a></li>
+                            <li><a href="">Gestión de la innovación</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Proyectos</a></li>
+                    <li id="main"><a href="contactos.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <p id="margen"></p>
+            <div id="ConteItemsMap">
+                <div class="itemMap">
+                    <div class="tarjetaMap">
+                        <iframe id="imgMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5811.403585151314!2d-2.9024069000000003!3d43.2576713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fac87437727%3A0x364f27e82def0130!2sCIFP%20Txurdinaga%20LHII!5e0!3m2!1ses!2ses!4v1729793200960!5m2!1ses!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-3">
+                            <i class="fas fa-chevron-left"><</i>
+                        </a>
+                        <a href="#itemCarrusel-2">    
+                            <i class="fas fa-chevron-right">></i>
+                        </a>
+                    </div>
+            </div>
+                    <div class="boxCartelCarrusel">
+                        <a class="cartelCarrusel" id="cartelCarrusel-1">
+                            <i>
+                                <h3 id="curso">CONTACTO</h3>
+                                <p>C/ Doctor Ornilla 2</p>
+                                <p>48004 Bilbao</p>
+                                <br>
+                                <p>+34 634 45 05 36</p>
+                                <p>epicanimationstudio@gmail.com</p>
+                                <br><hr>
+                                <div class="container">
+                                    <div class="column left">
+                                        <p>Contenido de la columna izquierda</p>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="column right">
+                                        <p>Contenido de la columna derecha</p>
+                                    </div>
+                                </div>
+                            </i>
+                        </a>
+                        <a class="subcartelCarrusel" id="subcartelCarrusel-1">
+                            <i>
+                                <p>En desarrollo</p>
+                            </i>
+                        </a>
+                    </div>  
+                    <div id="dots">
+                        <a id="dotActive">
+                            <i>·</i>
+                        </a>
+                        <a id="dot">
+                            <i>·</i>
+                        </a>
+                        <a id="dot">
+                            <i>·</i>
+                        </a>         
+                    </div>
+                
+            </div>
+            <p id="margen"></p>
             <div class="captcha-container">
                 <div class="captcha-content">
                     <div class="checkbox" id="checkbox"></div>
@@ -22,9 +119,6 @@
                     </div>
                 </div>
             </div>
-            
-           
-            
             <script>
                 const checkbox = document.getElementById('checkbox');
                 const captchaContainer = document.querySelector('.captcha-container');
@@ -33,5 +127,62 @@
                     captchaContainer.classList.toggle('checked');
                 });
             </script>
+            <p id="margen"></p>
+           
+             <p id="margen"></p>
+             <footer>
+                 <div>
+                     <div id="conteItems">
+                         <div id="boxLeft">
+                             <img src="Imagenes/Logo_v1.1 Fondo transparente.png" alt="Logo">
+                             <br><br>C/ Doctor Ornilla 2<br>48004 Bilbao<br><br><br>
+                             <p>+34 634 45 05 36</p>
+                             <p>epicanimationstudio@gmail.com</p>
+                         </div>
+                         <div id="boxCenter">
+                             <div id="boxCenterTop">
+                             <a href="https://github.com/Drys-4/EpicAnimationStudio" target="_back">
+                                 <img src="imagenes/github.png"/>
+                             </a>
+                             <a href="https://www.linkedin.com/company/linkedin/" target="_back">
+                                 <img src="imagenes/in.png"/>
+                             </a>
+                         </div>
+                         <div id="boxCenterBott">
+                             <ul><spam style="color: #4aa266;">
+                                 <li>Aritz Lorenzo</li>
+                                 <li>Ekaitz Paz</li>
+                                 <li>Udane Barca</li>
+                                 <li>Kethia Dinga</li>
+                             </spam></ul>
+                             <ul>
+                                <li>POLÍTICA DE PRIVACIDAD</li>
+                                <li>COOKIES</li>
+                                <li>MAPA WEB</li>
+                                <li>
+                                    <a href="contactos.html"><spam style="color: #c97ab8; text-decoration: none;">CONTACTO</spam></a>
+                                </li>
+                             </ul>
+                         </div>
+                     </div>
+                         <div id="boxRight">
+                             <img id="krita" src="imagenes/krita.png" alt="krita"/>
+                             <p id="margen"></p>
+                             <img id="blender" src="Imagenes/blender.png" alt="blender"/>
+                         </div>
+                     </div>
+                     <div class="ft-legal">
+                         <ul class="ft-legal-list">
+                           <li><a>Epic Animation Studio</a></li>
+                           <img id="legal" src="Imagenes/legal.gif">
+                           <img id="legal2" src="Imagenes/legal.gif">
+                           <img id="legal3" src="Imagenes/legal.gif">
+                           <img id="legal4" src="Imagenes/legal.gif">
+                           <img id="legal5" src="Imagenes/legal.gif">
+                           <li>&copy; 2024 Copyright Nowrap Inc.</li>
+                         </ul>
+                     </div>
+                 </div>
+             </footer>
         </body>
     </html>

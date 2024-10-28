@@ -1,0 +1,111 @@
+/*Estructura base*/
+
+#menu ul #main {
+    background:#c986b2;
+}
+
+#menu ul #main:hover {
+    background:#e499ca;
+}
+
+#margen {
+    height: 70;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background: #1a1a1a;
+    color: #e0e0e0;
+} 
+
+/*Mapa con ubicacion*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#ConteItemsMap {
+    height: 500px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.itemMap {
+    height: 100px;
+    position: relative;
+}
+
+.tarjetaMap {
+    height: 100px;
+}
+/* Cartel Informativo */
+
+.boxCartelCarrusel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.cartelCarrusel {
+    z-index: 1;
+    flex-grow: 1;
+    position: absolute;
+    bottom: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(58, 46, 58, 0.9);
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.subcartelCarrusel {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(7, 6, 7, 0.75);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 7px;
+}
+
+#curso {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    margin: 50px auto;
+    height: 400px; /* Puedes ajustar la altura según lo necesites */
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.left {
+    background-color: #f0f0f0;
+}
+
+.right {
+    background-color: #e0e0e0;
+}
+
+.divider {
+    width: 2px;
+    background-color: black;
+    height: 100px;
+}
