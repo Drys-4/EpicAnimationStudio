@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #ece9ee;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #28262a;
+    padding: 15px 0;
+}
+
+.header nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la sección de servicios */
+.services-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.services-section h1 {
+    font-size: 2.5em;
+    color: #6b4479;
+}
+
+.services-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background-color: #1e1919;
+}
+
+.service-item {
+    background-color: #392440;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}

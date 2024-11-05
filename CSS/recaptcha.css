@@ -100,3 +100,7 @@ p {
 .captcha-footer a:hover {
     text-decoration: underline;
 }
+
+#margen-re {
+    height: 20;
+}

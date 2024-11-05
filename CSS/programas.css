@@ -1,0 +1,21 @@
+/*Estructura base*/
+
+#menu ul #main {
+    background:#c986b2;
+}
+
+#menu ul #main:hover {
+    background:#e499ca;
+}
+
+#margen {
+    height: 70;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background: #1a1a1a;
+    color: #e0e0e0;
+} 
