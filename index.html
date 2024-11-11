@@ -41,7 +41,7 @@
                     <li><a href="" href="servicios.html">Servicios</a>
                         <ul>
                             <li><a href="Orientación.html">Orientacion</a></li>
-                            <li><a href="cursos.html">Cursos</a></li>
+                            <li><a href="Cursos.html">Cursos</a></li>
                         </ul>
                     </li>
                     <li><a href="innovacion.html">Innovación</a>
@@ -253,5 +253,16 @@
                     </div>
                 </div>
             </footer>
+            <div id="mensaje-bienvenida">¡Bienvenidos a Epic Animation Studio! </br>¡Aprende a dibujar tus personajes favoritos  con tutoriales paso a paso! </div>
+
+            <script>
+                // Hacer que el mensaje desaparezca después de 3 segundos
+                setTimeout(() => {
+                    const mensaje = document.getElementById('mensaje-bienvenida');
+                    mensaje.style.opacity = '0';
+                    // Eliminar el mensaje del DOM después de que desaparezca
+                    setTimeout(() => mensaje.remove(), 500);
+                }, 3000);
+            </script>
         </body>
     </html>

@@ -58,7 +58,59 @@
                 </ul>
             </nav>
             <section>
+                <section class="container">
+                    <!-- Descripción de la empresa -->
+                   
+                    <div>
+                       <img height="300px" src="https://img.freepik.com/fotos-premium/dibujo-hombre-cruz-pecho_854727-140735.jpg?semt=ais_hybrid alt="">
+                    </div>
+                    <div style="text-align: left; margin: 20px;">
+                        <h1>
+                            Sobre nosotros
+                        </h1>
+                        <p>
+                            Somos una empresa que se dedica al aprendizaje de animación 3D y 2D.</br> Damos enseñanza mediante videos de YouTube elegidos por nosotros para un aprendizaje básico y avanzado, tanto para los que quieren empezar desde cero como para los que ya tienen experiencia en el sector.
+                        </p>
+                    </div>
+                    
+                </section>
+                <section>
+                    <!-- Tabla de videos de aprendizaje -->
+                    <table style="width: 80%; margin: auto; text-align: center; border-collapse: collapse;">
+                        <tr>
+                            <th style="border: 1px solid #ddd; padding: 8px; background-color: #c97ab8; color: #ffffff;">Curso Básico</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; background-color: #c97ab8; color: #ffffff;">Curso Avanzado</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;" id="basico-videos"></td>
+                            <td style="border: 1px solid #ddd; padding: 8px;" id="avanzado-videos"></td>
+                          
+                        </tr>
+                    </table>
+                </section>
+              
+                <script>
+                
 
+                
+                    function mostrarVideos(videos, contenedorId) {
+                        const contenedor = document.getElementById(contenedorId);
+                        videos.forEach(video => {
+                            const iframe = document.createElement("iframe");
+                            iframe.src = video;
+                            iframe.width = "360";
+                            iframe.height = "200";
+                            iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+                            iframe.allowFullscreen = true;
+                            contenedor.appendChild(iframe);
+                        });
+                    }
+                
+                    // Mostrar los videos en las celdas correspondientes
+                    mostrarVideos(basicoVideos, "basico-videos");
+                    mostrarVideos(avanzadoVideos, "avanzado-videos");
+                </script>
+                
             <!--Completar contenido-->
             
             </section>
