@@ -115,6 +115,15 @@ body {
     height: 110px;
 }
 
+.triangle {
+    position: absolute;
+    bottom: -20px; /* Ajusta a -20px para colocarlo justo debajo del contenedor */
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgba(58, 46, 58, 0.9); /* Mismo color de fondo que el contenedor */
+  }
 
 /*Calendario*/
 
