@@ -74,43 +74,6 @@
                     </div>
                     
                 </section>
-                <section>
-                    <!-- Tabla de videos de aprendizaje -->
-                    <table style="width: 80%; margin: auto; text-align: center; border-collapse: collapse;">
-                        <tr>
-                            <th style="border: 1px solid #ddd; padding: 8px; background-color: #c97ab8; color: #ffffff;">Curso Básico</th>
-                            <th style="border: 1px solid #ddd; padding: 8px; background-color: #c97ab8; color: #ffffff;">Curso Avanzado</th>
-                        </tr>
-                        <tr>
-                            <td style="border: 1px solid #ddd; padding: 8px;" id="basico-videos"></td>
-                            <td style="border: 1px solid #ddd; padding: 8px;" id="avanzado-videos"></td>
-                          
-                        </tr>
-                    </table>
-                </section>
-              
-                <script>
-                
-
-                
-                    function mostrarVideos(videos, contenedorId) {
-                        const contenedor = document.getElementById(contenedorId);
-                        videos.forEach(video => {
-                            const iframe = document.createElement("iframe");
-                            iframe.src = video;
-                            iframe.width = "360";
-                            iframe.height = "200";
-                            iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-                            iframe.allowFullscreen = true;
-                            contenedor.appendChild(iframe);
-                        });
-                    }
-                
-                    // Mostrar los videos en las celdas correspondientes
-                    mostrarVideos(basicoVideos, "basico-videos");
-                    mostrarVideos(avanzadoVideos, "avanzado-videos");
-                </script>
-                
             <!--Completar contenido-->
             
             </section>
