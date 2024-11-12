@@ -25,11 +25,39 @@ body {
     flex: content;
 }
 
-h1 {
-    margin: 30px 15px 0px 100px;
+#proyH {
+    margin: 50px 15px 0px 100px;
 }
 
-p {
-    margin-right: 40px;
+#proyP {
+    margin: 40px 100px 0px 100px;
     text-align: justify;
+}
+
+/*Circulos*/
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background-color: #1e1919;
+}
+
+.service-item {
+    background-color: #392440;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.service-item a {
+    text-decoration: none;
+    color: #ffffff;
 }
