@@ -28,10 +28,10 @@ section {
     flex-wrap: wrap;
     padding: 50px;
     background-color: #0d0d0d; /* Fondo oscuro para resaltar las tarjetas */
-  }
+}
   
-  /* Estilo de tarjeta */
-  .boxProyect {
+/* Estilo de tarjeta */
+.boxProyect {
     position: relative;
     background: #1c1c1c; /* Fondo oscuro */
     color: #f1f1f1;
@@ -42,47 +42,47 @@ section {
     border: 2px solid transparent;
     box-shadow: 0 0 15px rgba(201, 122, 184, 0.6); /* Sombra de neón */
     transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
-  }
+}
   
-  /* Efecto de hover */
-  .boxProyect:hover {
+/* Efecto de hover */
+.boxProyect:hover {
     transform: scale(1.08);
     box-shadow: 0 0 25px rgba(201, 122, 184, 0.9); /* Aumenta la sombra en hover */
     border: 2px solid #c97ab8; /* Borde con resplandor */
-  }
+}
   
-  /* Título */
-  .boxProyect h3 {
+/* Título */
+.boxProyect h3 {
     font-size: 1.6em;
     color: #c97ab8;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 15px;
-  }
+}
   
-  /* Imagen con efecto parallax */
-  .boxProyect img {
+/* Imagen con efecto parallax */
+.boxProyect img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease; /* Efecto de parallax */
-  }
+}
   
-  .boxProyect:hover img {
+.boxProyect:hover img {
     transform: scale(1.05) translateY(-5px); /* Desplaza la imagen para dar profundidad */
-  }
+}
   
-  /* Texto descriptivo */
-  .boxProyect p {
+/* Texto descriptivo */
+.boxProyect p {
     font-size: 0.95em;
     line-height: 1.6;
     color: #ddd;
     margin-top: 10px;
     text-align: justify;
-  }
+}
   
-  /* Luz decorativa animada */
-  .boxProyect::before {
+/* Luz decorativa animada */
+.boxProyect::before {
     content: '';
     position: absolute;
     top: -20px;
@@ -95,10 +95,56 @@ section {
     border-radius: 50%;
     transform: translate(0, 0);
     transition: opacity 0.4s ease, transform 0.4s ease;
-  }
+}
   
-  .boxProyect:hover::before {
+.boxProyect:hover::before {
     opacity: 1;
     transform: translate(-20px, 20px); /* Desplaza la luz */
-  }
-  
+}
+
+   /* Contenedor del mensaje de contacto */
+#body-contac {
+    margin-top: 200px;
+    width: 100%;
+}
+.contact-message {
+    color: #c97ab8; /* Color de texto en tono gótico */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: justify; /* Justificar texto */
+    font-family: 'Georgia', serif; /* Fuente estilo gótico */
+}
+
+.contact-message h2 {
+    font-size: 24px;
+    color: #f1f1f1; /* Color claro para el título */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-message p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+/* Botón de contacto */
+.contact-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #c97ab8;
+    color: #2e2e2e;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.contact-button:hover {
+    background-color: #a45690;
+}
