@@ -19,3 +19,17 @@ body {
     background: #1a1a1a;
     color: #e0e0e0;
 } 
+
+.boxProyect {
+    display: flex;
+    flex: content;
+}
+
+h1 {
+    margin: 30px 15px 0px 100px;
+}
+
+p {
+    margin-right: 40px;
+    text-align: justify;
+}
