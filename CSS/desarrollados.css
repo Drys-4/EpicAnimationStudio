@@ -19,3 +19,86 @@ body {
     background: #1a1a1a;
     color: #e0e0e0;
 } 
+
+/* Contenedor principal */
+section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #0d0d0d; /* Fondo oscuro para resaltar las tarjetas */
+  }
+  
+  /* Estilo de tarjeta */
+  .boxProyect {
+    position: relative;
+    background: #1c1c1c; /* Fondo oscuro */
+    color: #f1f1f1;
+    width: 280px;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 15px rgba(201, 122, 184, 0.6); /* Sombra de neón */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+  }
+  
+  /* Efecto de hover */
+  .boxProyect:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(201, 122, 184, 0.9); /* Aumenta la sombra en hover */
+    border: 2px solid #c97ab8; /* Borde con resplandor */
+  }
+  
+  /* Título */
+  .boxProyect h3 {
+    font-size: 1.6em;
+    color: #c97ab8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+  
+  /* Imagen con efecto parallax */
+  .boxProyect img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Efecto de parallax */
+  }
+  
+  .boxProyect:hover img {
+    transform: scale(1.05) translateY(-5px); /* Desplaza la imagen para dar profundidad */
+  }
+  
+  /* Texto descriptivo */
+  .boxProyect p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #ddd;
+    margin-top: 10px;
+    text-align: justify;
+  }
+  
+  /* Luz decorativa animada */
+  .boxProyect::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 60px;
+    height: 60px;
+    background: rgba(201, 122, 184, 0.8); /* Color de luz */
+    filter: blur(15px); /* Difumina la luz */
+    opacity: 0;
+    border-radius: 50%;
+    transform: translate(0, 0);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  .boxProyect:hover::before {
+    opacity: 1;
+    transform: translate(-20px, 20px); /* Desplaza la luz */
+  }
+  
