@@ -119,9 +119,25 @@ i {
 
 #video {
     position: relative;
-    background-color: #3b053b;
+    background-color: #1d021d;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 50px;
+}
+
+#mensaje-bienvenida {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(19, 1, 23, 0.903);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    z-index: 1000;
+    text-align: center;
 }
