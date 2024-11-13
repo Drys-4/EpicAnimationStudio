@@ -18,177 +18,60 @@ body {
     font-family: 'Georgia', serif;
     background: #1a1a1a;
     color: #e0e0e0;
-   margin: 0;
-   padding: 0;
-   height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
+} 
+
+.imagenes {
+    display: flex;
+    flex-direction: row; /* Coloca las imágenes en una fila */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre las imágenes */
 }
 
-
-p{
-    font-weight:bold ;
-    font-style:italic;
-    font-size: 1.2em; 
-    color: white; 
-    margin-top: 10px;
-}
-    a {
-        color: #ffffff; /* Color blanco para el enlace */
-        text-decoration: none; /* Quita el subrayado, opcional */
-    }
-    
-    a:hover {
-        color: #ffffff; /* Color blanco en el hover */
-    }
-    
-    a:active {
-        color: #ffffff; /* Color blanco cuando se hace clic */
-    }
-    
-    a:visited {
-        color: #ffffff; /* Color blanco después de visitar el enlace */
-    }
-      
-    
-
-   
-
-#img1{
-    margin: 33,33%;
-
-}
-    .anime {
-        width: 400;
-        height: 300;
-        border-radius: 20px;
-        margin: 20px;
-        margin-right: 20px; 
-        vertical-align: middle;
-        float:left; 
-        border: 5px solid #4c2834;
-        border-radius: 15px;
-    }
-        .texto {
-            position: absolute;   /* Coloca el texto sobre la imagen */
-            top: 75%;             /* Centra el texto verticalmente */
-            left: 13%;            /* Centra el texto horizontalmente */
-            transform: translate(-40%, -40%); /* Centrado preciso */
-            color: rgb(255, 255, 255);         /* Color del texto */
-            font-size: 25px;      /* Tamaño del texto */
-            font-weight: bold;    /* Grosor del texto */
-            text-align: left;   /* Centrado del texto */
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-            padding: 10px 20px;   /* Espaciado interno */
-            border-radius: 5px;   /* Bordes redondeados */
-            
-  
-
-        }
-
-            .texto {
-                font-size: 30px;
-                color: #ffffff;
-                background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-                padding: 5px; /* Espaciado alrededor del texto */
-                transition: background-color 0.3s; /* Transición solo para el color de fondo */
-            }
-            
-            .texto:hover {
-                background-color: #e499ca; /* Oscurece el fondo al pasar el cursor */
-            }
-    
-            
-            
-        
-
-    #img2{
-        margin: 33,33%;
-    
-    }
-    .manga {
-        width: 400;
-        height: 300;
-        border-radius: 20px;
-        margin: 20px;
-        margin-right: 20px; 
-        vertical-align: middle;
-        float:left; 
-        border: 5px solid #4c2834;
-        border-radius: 15px;
-    }
-        .texto2 {
-            position: absolute;   /* Coloca el texto sobre la imagen */
-            top: 75%;             /* Centra el texto verticalmente */
-            left: 43%;            /* Centra el texto horizontalmente */
-            transform: translate(-40%, -40%); /* Centrado preciso */
-            color: white;         /* Color del texto */
-            font-size: 25px;      /* Tamaño del texto */
-            font-weight: bold;    /* Grosor del texto */
-            text-align: left;   /* Centrado del texto */
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-            padding: 10px 20px;   /* Espaciado interno */
-            border-radius: 5px;   /* Bordes redondeados */
-        }
-            .texto2 {
-                font-size: 30px;
-                color: #ffffff;
-                background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-                padding: 5px; /* Espaciado alrededor del texto */
-                transition: background-color 0.3s; /* Transición solo para el color de fondo */
-            }
-            
-            .texto2:hover {
-                background-color: #e499ca; /* Oscurece el fondo al pasar el cursor */
-            }
-        
-        
-
-#img3 {
-    margin: 33,33%;
+.colorText {
+    color: #ffffff;
+    text-decoration: none;
 }
 
-.arte{
-    width: 400;
-    height: 300;
-    border-radius: 20px;
+.colorText:hover,
+.colorText:active,
+.colorText:visited {
+    color: #ffffff;
+}
+
+#img1, #img2, #img3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Para alinear texto debajo de la imagen */
     margin: 20px;
-    margin-right: 20px; 
-    vertical-align: middle;
-    float:left; 
-    border: 5px solid #4c2834;
-    border-radius: 15px;
 }
-    .texto3 {
-        position: absolute;   /* Coloca el texto sobre la imagen */
-        top: 75%;             /* Centra el texto verticalmente */
-        left: 73%;            /* Centra el texto horizontalmente */
-        transform: translate(-40%, -40%); /* Centrado preciso */
-        color: white;         /* Color del texto */
-        font-size: 25px;      /* Tamaño del texto */
-        font-weight: bold;    /* Grosor del texto */
-        text-align: left;   /* Centrado del texto */
-        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-        padding: 10px 20px;   /* Espaciado interno */
-        border-radius: 5px;   /* Bordes redondeados */
-        
-    }
-        .texto3 {
-            font-size: 30px;
-            color: #ffffff;
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-            padding: 5px; /* Espaciado alrededor del texto */
-            transition: background-color 0.3s; /* Transición solo para el color de fondo */
-        }
-        
-        .texto3:hover {
-            background-color: #e499ca; /* Oscurece el fondo al pasar el cursor */
-        }
-    
-    
 
+/* Estilos generales para las imágenes */
+.anime, .manga, .arte {
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    border: 5px solid #4c2834;
+    vertical-align: middle;
+}
 
+/* Estilos generales para los contenedores de texto */
+.texto, .texto2, .texto3 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 10px; /* Alinea el texto en la parte inferior de cada imagen */
+}
 
-
-
+/* Hover para el fondo del texto */
+.texto:hover, .texto2:hover, .texto3:hover {
+    background-color: #e499ca;
+}
