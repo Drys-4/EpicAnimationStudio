@@ -19,3 +19,58 @@ body {
     background: #1a1a1a;
     color: #e0e0e0;
 } 
+
+
+  
+  /* Estilo para la sección de tutoriales */
+  .tutoriales {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #62155a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tutoriales h2 {
+    color: #ffffff;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para cada tutorial */
+  .tutorial {
+    background-color: #822078;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tutorial h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  
+  .tutorial p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+  
+  .tutorial a {
+    padding: 10px 20px;
+    background-color: #874771;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .tutorial a:hover {
+    background-color: #e499dc;
+  }
+  

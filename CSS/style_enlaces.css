@@ -84,3 +84,37 @@
 #menu ul li:hover > ul {
     display:block;
 }
+p{
+    font-weight:bold ;
+    font-style:italic;
+    font-size: 1.2em; 
+    color: white; 
+    margin-top: 10px;
+}
+/* Estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilo para las celdas (th y td) */
+th, td {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    text-align: left;
+}
+.meme{
+    width: 3;
+    height: 3;
+    vertical-align:left;
+    float:left; 
+}
+.meme2{
+    width: 3;
+    height: 3;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: right; 
+}
+
+
