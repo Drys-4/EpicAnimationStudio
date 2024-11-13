@@ -5,7 +5,7 @@
 }
 
 #menu ul #main:hover {
-    background:#e499ca;
+    background:#50064e;
 }
 
 #margen {
@@ -16,9 +16,32 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Georgia', serif;
-    background: #1a1a1a;
+    background: #21021f;
     color: #e0e0e0;
 } 
 .container {
     display:flex;
+}
+@keyframes aparecerDesplazado {
+    from {
+        transform: translateX(-100%); /* Comienza fuera de la pantalla a la izquierda */
+    }
+    to {
+        transform: translateX(100); /* Llega a su posición original */
+    }
+}
+#feo {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(34, 2, 26, 0.5); /* Ajuste a cor para combinar com o fundo */
+    padding: 10px; /* Ajuste para dar espaço entre o fundo e a imagem */
+    display: inline-block;
+    animation: aparecerDesplazado 1s ease-in-out forwards; /* Aplica la animación */
+
+}
+
+.texto {
+    max-width: 600px; /* Ajusta el valor según el ancho que desees */
+    margin: 0 auto;   /* Centra el bloque de texto en la página */
+    text-align: justify; /* Justifica el texto para que tenga un borde alineado */
+    padding:10px;
 }
