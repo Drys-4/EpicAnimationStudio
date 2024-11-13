@@ -19,3 +19,56 @@ body {
     background: #1a1a1a;
     color: #e0e0e0;
 } 
+
+section {
+    display: flex;
+    justify-content: center; /*Centra las tarjetas horizontalmente*/
+    gap: 20px; /*Espacio entre las tarjetas*/
+    padding: 20px;
+    flex-wrap: wrap; /*Permite que las tarjetas se acomoden en varias filas si es necesario*/
+    background-color: #1e1e1e; /*Fondo oscuro para la sección*/
+}
+
+/*Estilo para cada caja de proyecto individual*/
+
+.boxProyect {
+    background-color: #2e2e2e; /*Fondo para cada tarjeta*/
+    color: #f1f1f1; /*Color del texto*/
+    border-radius: 8px; /*Bordes redondeados*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /*Sombra alrededor de las tarjetas*/
+    width: 300px; /*Ancho fijo para cada tarjeta*/
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s; /*Transición para el efecto de hover*/
+}
+  
+/*Estilo del título del proyecto*/
+
+.boxProyect h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #c97ab8; /*Color destacado para los títulos*/
+}
+  
+/*Estilo para la imagen dentro de cada tarjeta*/
+
+.boxProyect img {
+    width: 100%; /*La imagen ocupa el ancho completo de la tarjeta*/
+    border-radius: 4px; /*Bordes ligeramente redondeados para las imágenes*/
+    margin-bottom: 15px;
+}
+  
+  /*Estilo para el texto*/
+
+.boxProyect p {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: justify;
+    color: #d1d1d1;
+}
+  
+/*Efecto de hover para agrandar ligeramente la tarjeta*/
+
+.boxProyect:hover {
+    transform: scale(1.05); /*Agranda la tarjeta al pasar el ratón*/
+  }
